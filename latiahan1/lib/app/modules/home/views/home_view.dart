@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:latiahan1/app/modules/home/views/detail_view.dart';
 
 import '../controllers/home_controller.dart';
 import '../../../data/models/user_model.dart';
@@ -38,6 +39,9 @@ class HomeView extends GetView<HomeController> {
                       ),
                       title: Text("${user.firstName} ${user.lastName}"),
                       subtitle: Text("${user.email}"),
+                      // onTap: () {
+                      //   Get.to(() => DetailView(user: user.id!));
+                      // },
                     );
                   },
                 );

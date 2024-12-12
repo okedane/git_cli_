@@ -13,6 +13,4 @@ class UserProvider extends GetConnect {
     final response = await get('https://reqres.in/api/users');
     return User.fromJsonList(response.body["data"]);
   }
-
-  //CRUD
 }
